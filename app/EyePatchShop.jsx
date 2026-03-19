@@ -5,16 +5,18 @@ const designs = [
   {
     name: "Pirate Power",
     designer: "Name, Age, Place",
-    details: "A bold and classic pirate-style patch with skull and crossbones detailing.",
-    price: "$12.99",
+    details:
+      "A bold and classic pirate-style patch with skull and crossbones detailing.",
+    price: "$5",
     emoji: "🏴‍☠️",
     color: "#1a1a2e",
   },
   {
     name: "Galaxy Vision",
     designer: "Name, Age, Place",
-    details: "Explore the universe with this space-themed patch, featuring swirling nebulas and stars.",
-    price: "$14.99",
+    details:
+      "Explore the universe with this space-themed patch, featuring swirling nebulas and stars.",
+    price: "$5",
     emoji: "🌌",
     color: "#0d1b2a",
   },
@@ -22,7 +24,7 @@ const designs = [
     name: "Superhero Shield",
     designer: "Name, Age, Place",
     details: "Feel like a hero every day with this bold shield design.",
-    price: "$13.99",
+    price: "$5",
     emoji: "🦸",
     color: "#1b2838",
   },
@@ -30,15 +32,16 @@ const designs = [
     name: "Animal Friends",
     designer: "Name, Age, Place",
     details: "Friendly and adorable animals make this patch fun for everyone.",
-    price: "$11.99",
+    price: "$5",
     emoji: "🐾",
     color: "#1a2e1a",
   },
   {
     name: "Sports Star",
     designer: "Name, Age, Place",
-    details: "For active kids who love sports — bold, energetic, and ready to play.",
-    price: "$12.49",
+    details:
+      "For active kids who love sports — bold, energetic, and ready to play.",
+    price: "$5",
     emoji: "⚡",
     color: "#2e1a00",
   },
@@ -46,7 +49,7 @@ const designs = [
     name: "Rainbow Spark",
     designer: "Name, Age, Place",
     details: "A colorful and vibrant patch bursting with rainbow energy.",
-    price: "$13.49",
+    price: "$5",
     emoji: "🌈",
     color: "#1e0a2e",
   },
@@ -54,23 +57,25 @@ const designs = [
     name: "Mystic Moon",
     designer: "Name, Age, Place",
     details: "A night sky theme with crescent moon and scattered stars.",
-    price: "$14.29",
+    price: "$5",
     emoji: "🌙",
     color: "#0a0a1a",
   },
   {
     name: "Jungle Safari",
     designer: "Name, Age, Place",
-    details: "Animals and plants from the jungle come alive on this adventure patch.",
-    price: "$12.79",
+    details:
+      "Animals and plants from the jungle come alive on this adventure patch.",
+    price: "$5",
     emoji: "🌿",
     color: "#0d1f0d",
   },
   {
     name: "Candy Land",
     designer: "Name, Age, Place",
-    details: "Sweet treats and fun candy designs make patching a little sweeter.",
-    price: "$11.89",
+    details:
+      "Sweet treats and fun candy designs make patching a little sweeter.",
+    price: "$5",
     emoji: "🍭",
     color: "#2e0a1a",
   },
@@ -507,11 +512,26 @@ export default function EyePatchShop() {
       `}</style>
 
       <div className="shop">
-
         {/* SHARED HEADER */}
-        <div className="header" style={{ position: "sticky", top: 0, zIndex: 100 }}>
-          <div className="logo" onClick={() => navigate("home")} style={{ cursor: "pointer" }}>Eye<span>Patch</span></div>
-          <div style={{ display: "flex", alignItems: "center", gap: "16px", position: "relative" }}>
+        <div
+          className="header"
+          style={{ position: "sticky", top: 0, zIndex: 100 }}
+        >
+          <div
+            className="logo"
+            onClick={() => navigate("home")}
+            style={{ cursor: "pointer" }}
+          >
+            Eye<span>Patch</span>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "16px",
+              position: "relative",
+            }}
+          >
             <a
               href="https://forms.gle/g8EQw3CH5ojZdubE9"
               target="_blank"
@@ -531,8 +551,18 @@ export default function EyePatchShop() {
             </button>
             {menuOpen && (
               <div className="nav-dropdown">
-                <button className={`nav-link ${page === "home" ? "active" : ""}`} onClick={() => navigate("home")}>🏠 Home</button>
-                <button className={`nav-link ${page === "about" ? "active" : ""}`} onClick={() => navigate("about")}>👋 About Us</button>
+                <button
+                  className={`nav-link ${page === "home" ? "active" : ""}`}
+                  onClick={() => navigate("home")}
+                >
+                  🏠 Home
+                </button>
+                <button
+                  className={`nav-link ${page === "about" ? "active" : ""}`}
+                  onClick={() => navigate("about")}
+                >
+                  👋 About Us
+                </button>
               </div>
             )}
           </div>
@@ -541,24 +571,34 @@ export default function EyePatchShop() {
         {/* ABOUT PAGE */}
         {page === "about" && (
           <div className="about">
-            <h1>About <em>EyePatch</em></h1>
+            <h1>
+              About <em>EyePatch</em>
+            </h1>
             <p className="about-subtitle">Made by kids, for kids</p>
             <div className="about-section">
               <h2>Who We Are</h2>
               <p>
-                EyePatch is a shop built around a simple idea: kids who wear eye patches deserve something fun. Every design in our collection was created by a real child — full of personality, imagination, and heart.
+                EyePatch is a shop built around a simple idea: kids who wear eye
+                patches deserve something fun. Every design in our collection
+                was created by a real child — full of personality, imagination,
+                and heart.
               </p>
             </div>
             <div className="about-section">
               <h2>Our Mission</h2>
               <p>
-                We believe that wearing a patch shouldn't feel like a chore. By putting kids in charge of the designs, we make patching something to look forward to — not dread. Every purchase supports the young designer behind the patch.
+                We believe that wearing a patch shouldn't feel like a chore. By
+                putting kids in charge of the designs, we make patching
+                something to look forward to — not dread. Every purchase
+                supports the young designer behind the patch.
               </p>
             </div>
             <div className="about-section">
               <h2>Want to Submit a Design?</h2>
               <p>
-                Is your child an artist? We'd love to feature their work! Hit the "Submit Your Design" button at the top of any page to share their idea with us.
+                Is your child an artist? We'd love to feature their work! Hit
+                the "Submit Your Design" button at the top of any page to share
+                their idea with us.
               </p>
             </div>
           </div>
@@ -573,14 +613,18 @@ export default function EyePatchShop() {
 
             <div
               className="detail-image"
-              style={{ background: `linear-gradient(135deg, ${selected.color}, #1b2a3b)` }}
+              style={{
+                background: `linear-gradient(135deg, ${selected.color}, #1b2a3b)`,
+              }}
             >
               {selected.emoji}
               <span className="placeholder-label">Replace with your image</span>
             </div>
 
             <div className="detail-name">{selected.name}</div>
-            <div className="detail-designer">Designed by {selected.designer}</div>
+            <div className="detail-designer">
+              Designed by {selected.designer}
+            </div>
             <p className="detail-desc">{selected.details}</p>
             <div className="detail-price">{selected.price}</div>
 
@@ -592,7 +636,10 @@ export default function EyePatchShop() {
                 {liked[selected.name] ? "❤️ Liked!" : "🤍 Like"}
               </button>
               {/* Replace href with your payment link e.g. Stripe, Gumroad */}
-              <button className="buy-btn" onClick={() => alert("Add your payment link here!")}>
+              <button
+                className="buy-btn"
+                onClick={() => alert("Add your payment link here!")}
+              >
                 🛒 Buy Now — {selected.price}
               </button>
             </div>
@@ -603,16 +650,29 @@ export default function EyePatchShop() {
         {page === "home" && !selected && (
           <>
             <div className="hero">
-              <h1>Kid-designed<br /><em>Eye Patches</em></h1>
-              <p>Every patch is designed by a real kid. Browse the collection and find your favorite.</p>
+              <h1>
+                Kid-designed
+                <br />
+                <em>Eye Patches</em>
+              </h1>
+              <p>
+                Every patch is designed by a real kid. Browse the collection and
+                find your favorite.
+              </p>
             </div>
 
             <div className="grid">
               {designs.map((design, i) => (
-                <div className="card" key={i} onClick={() => setSelected(design)}>
+                <div
+                  className="card"
+                  key={i}
+                  onClick={() => setSelected(design)}
+                >
                   <div
                     className="card-image"
-                    style={{ background: `linear-gradient(135deg, ${design.color}, #1b2a3b)` }}
+                    style={{
+                      background: `linear-gradient(135deg, ${design.color}, #1b2a3b)`,
+                    }}
                   >
                     {design.emoji}
                   </div>
@@ -629,7 +689,6 @@ export default function EyePatchShop() {
             </div>
           </>
         )}
-
       </div>
     </>
   );
