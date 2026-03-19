@@ -572,33 +572,33 @@ export default function EyePatchShop() {
         {page === "about" && (
           <div className="about">
             <h1>
-              About <em>EyePatch</em>
+              About <em>Design Your Patch</em>
             </h1>
-            <p className="about-subtitle">Made by kids, for kids</p>
+            <p className="about-subtitle">Enjoy the Patch</p>
             <div className="about-section">
               <h2>Who We Are</h2>
               <p>
-                EyePatch is a shop built around a simple idea: kids who wear eye
-                patches deserve something fun. Every design in our collection
-                was created by a real child — full of personality, imagination,
-                and heart.
+                DYP (Design Your Patch) is a shop built around the idea that
+                kids who wear eye patches deserve something fun. Every design on
+                this website was either drawn by a kid, or thought up by a kid.
               </p>
             </div>
             <div className="about-section">
               <h2>Our Mission</h2>
               <p>
                 We believe that wearing a patch shouldn't feel like a chore. By
-                putting kids in charge of the designs, we make patching
-                something to look forward to — not dread. Every purchase
-                supports the young designer behind the patch.
+                putting kids in charge of the designs, wearing a patch becomes a
+                way to express yourself, to show off your style, not something
+                embarassing. And every purchase supports the young designer
+                behind the patch.
               </p>
             </div>
             <div className="about-section">
               <h2>Want to Submit a Design?</h2>
               <p>
-                Is your child an artist? We'd love to feature their work! Hit
-                the "Submit Your Design" button at the top of any page to share
-                their idea with us.
+                Do you have an idea for a design? We'd love to feature your
+                work! Hit the "Submit Your Design" button at the top of the page
+                to share an idea with us.
               </p>
             </div>
           </div>
