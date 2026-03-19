@@ -522,7 +522,7 @@ export default function EyePatchShop() {
             onClick={() => navigate("home")}
             style={{ cursor: "pointer" }}
           >
-            Eye<span>Patch</span>
+            DesignYour<span>Patch</span>
           </div>
           <div
             style={{
