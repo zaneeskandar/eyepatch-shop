@@ -593,6 +593,32 @@ export default function EyePatchShop() {
                 behind the patch.
               </p>
             </div>
+            <div
+              className="about-section"
+              style={{ display: "flex", gap: "24px", alignItems: "center" }}
+            >
+              <img
+                src="/me.jpg"
+                alt="Owner as a kid"
+                style={{
+                  width: "120px",
+                  height: "120px",
+                  borderRadius: "50%",
+                  objectFit: "cover",
+                  border: "3px solid var(--accent2)",
+                  flexShrink: 0,
+                }}
+              />
+              <div>
+                <h2>Meet the Owner 👋</h2>
+                <p>
+                  Hi! I'm Zane. I wore an eye patch for 8 years as a kid. In
+                  that time, I never wore one to school, or anywhere beyond my
+                  house, because I was afraid to look funny. I want to fix that
+                  experience for anyone I can!
+                </p>
+              </div>
+            </div>
             <div className="about-section">
               <h2>Want to Submit a Design?</h2>
               <p>
